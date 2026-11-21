@@ -1,1 +1,9 @@
-{"name":"NEXUS Engineering Suite","short_name":"NEXUS","start_url":"./","display":"standalone","background_color":"#090e1b","theme_color":"#0b1020","description":"Offline-first engineering tools."}
+{
+  "name": "BRO Nexus",
+  "short_name": "BRO Nexus",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090e1b",
+  "theme_color": "#0b1020",
+  "description": "BRO Nexus is the official home of BRO PC Toolkit and NEXUS Engineering Suite."
+}
