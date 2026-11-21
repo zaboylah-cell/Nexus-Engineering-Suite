@@ -60,7 +60,7 @@
 <section id="downloads" class="site-panel">
   <div class="site-eyebrow">GET BRO NEXUS</div><h2>Downloads & releases</h2>
   <p class="muted">Choose the package for your computer. Installers and portable builds are published in the GitHub Releases section after a version is built.</p>
-  <div class="site-cards downloads">
+  <div class="site-cards downloads" id="download-cards">
     <article><b>Windows Installer</b><span>Guided setup for 64-bit Windows.</span><a href="https://github.com/zaboylah-cell/Nexus-Engineering-Suite/releases/latest">Get latest release ↗</a></article>
     <article><b>Windows Portable</b><span>Standalone executable; no installation wizard.</span><a href="https://github.com/zaboylah-cell/Nexus-Engineering-Suite/releases/latest">Get latest release ↗</a></article>
     <article><b>macOS Installer</b><span>DMG package for supported Macs.</span><a href="https://github.com/zaboylah-cell/Nexus-Engineering-Suite/releases/latest">Get latest release ↗</a></article>
@@ -68,6 +68,7 @@
   </div>
   <p class="muted" id="release-note">Release files appear here when a tagged build has been published.</p>
 </section>
+<ul id="site-features" class="muted"></ul>
 <section id="documentation" class="site-panel"><div class="site-eyebrow">DOCUMENTATION</div><h2>How it works</h2><p class="muted">The website runs as a static HTML/CSS/JavaScript site and loads its public content configuration from <code>site.json</code>. The Windows and macOS desktop editions use Electron, so no Python runtime is required. The same root <code>index.html</code> is loaded by the website and desktop app.</p></section>
 <section id="privacy" class="site-panel"><div class="site-eyebrow">PRIVACY & SAFETY</div><h2>Transparent by design</h2><p class="muted">No account login, password collection, analytics, telemetry, hidden downloads, or automatic cleanup. Disk information and file previews are read-only. The app only opens allow-listed system destinations and HTTP/HTTPS web links. Unsigned installers may show standard Windows or macOS security prompts; signing/notarization requires developer credentials.</p></section>
 <footer class="foot">NEXUS Engineering Suite · Runs locally · No account, analytics, external scripts, or remote data submission. Calculations are aids; verify safety-critical engineering decisions against authoritative specifications.</footer></main>
