@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b1020"><meta name="description" content="BRO Nexus is the official website for BRO PC Toolkit and NEXUS Engineering Suite: private, local-first tools for Windows, macOS and the web.">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
 <title>BRO Nexus — PC Toolkit & Engineering Suite</title>
 <link rel="manifest" href="manifest.webmanifest">
 <style>
@@ -13,7 +13,7 @@
 </head>
 <body>
 <header><div><h1><span>BRO NEXUS</span> · PC TOOLKIT</h1><p class="sub">One local-first toolkit for Windows, macOS and the web — plus the NEXUS engineering workbench.</p></div><div class="status">● LOCAL-FIRST · NO ACCOUNT · NO TRACKING</div></header>
-<nav class="sitebar" aria-label="Website navigation"><a href="#home">Home</a><a href="#suite">Features</a><a href="#downloads">Downloads</a><a href="https://github.com/zaboylah-cell/Nexus-Engineering-Suite/releases" target="_blank" rel="noopener">Releases</a><a href="#documentation">Documentation</a><a href="#privacy">Privacy</a></nav>
+<nav class="sitebar" aria-label="Website navigation"><a href="#home">Home</a><a href="#suite">Features</a><a href="#downloads">Downloads</a><a href="#desktop-tools">PC & Mac App</a><a href="https://github.com/zaboylah-cell/Nexus-Engineering-Suite/releases" target="_blank" rel="noopener">Releases</a><a href="#documentation">Documentation</a><a href="#privacy">Privacy</a></nav>
 <main class="wrap"><section class="intro"><div><h2>Engineering workbench</h2><p>Tools run in your browser. Your inputs stay on this device.</p></div><input class="search" id="search" placeholder="Search tools…"></section>
 <div class="layout"><nav class="nav" aria-label="Tool categories"><button class="active" data-cat="all">✦ All tools</button><button data-cat="software">⌘ Software</button><button data-cat="electronics">ϟ Electronics</button><button data-cat="hardware">⚙ Hardware</button><button data-cat="network">◎ Networking</button><button data-cat="converters">⇄ Converters</button><button data-cat="notes">▤ Notes</button></nav>
 <section class="content"><div class="grid" id="tools">
@@ -28,6 +28,20 @@
 <article class="card" data-cat="converters" data-terms="unix timestamp date time"><h3>Unix Timestamp</h3><p>Convert Unix seconds to a readable UTC date, or the reverse.</p><div class="field"><label>Timestamp or ISO date</label><input id="timein" placeholder="e.g. 1794919500"></div><button class="action" data-do="time">Convert</button><div class="result" id="timeout">Result appears here.</div></article>
 <article class="card" data-cat="notes" data-terms="engineering notes project notes local"><h3>Engineering Notes</h3><p>Private notes saved only in this browser on this device.</p><textarea id="notes" placeholder="Project notes, measurements, component references…"></textarea><button class="action" data-do="notes">Save notes</button><div class="result" id="notesout">Notes are stored locally.</div></article>
 </div></section></div>
+
+<section id="desktop-tools" class="site-panel">
+ <div class="site-eyebrow">DESKTOP EDITION</div><h2>PC & Mac controls</h2>
+ <p class="muted" id="desktop-status">On the website, these features are informational. Open the Windows or macOS desktop app to access local device controls.</p>
+ <div class="site-cards">
+  <article><b>System Overview</b><span id="device-info">Device details appear in the desktop app.</span><button class="action" id="sys-refresh">Refresh system info</button></article>
+  <article><b>Disk Manager</b><span>Read-only drive capacity information.</span><button class="action" id="drive-refresh">View drives</button><div class="result" id="drive-results">Available in desktop edition.</div></article>
+  <article><b>File Organizer</b><span>Choose a folder and preview its contents. No files are changed.</span><button class="action" id="folder-pick">Choose folder</button><div class="result" id="folder-results">Available in desktop edition.</div></article>
+  <article><b>Network Diagnostics</b><span>Test basic internet connectivity.</span><button class="action" id="network-test">Run test</button><div class="result" id="network-results">Available in desktop edition.</div></article>
+  <article><b>App Launcher</b><span>Open approved system destinations.</span><button class="action" data-system="apps">App settings</button><button class="action" data-system="home">Home folder</button></article>
+  <article><b>Security Center</b><span>Open built-in operating-system security settings.</span><button class="action" data-system="security">Open security settings</button></article>
+  <article><b>Browser Shortcuts</b><span>Open a website in your default browser.</span><input id="desktop-url" value="https://github.com/zaboylah-cell/Nexus-Engineering-Suite"><button class="action" id="desktop-open-url">Open website</button></article>
+ </div>
+</section>
 <section id="suite" class="site-panel">
   <div class="site-eyebrow">BRO NEXUS · UNIFIED TOOLKIT</div>
   <h2>One dashboard. Everyday tools.</h2>
