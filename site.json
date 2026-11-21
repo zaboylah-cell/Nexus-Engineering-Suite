@@ -1,0 +1,44 @@
+{
+  "siteName": "BRO Nexus",
+  "projectName": "BRO PC Toolkit + NEXUS Engineering Suite",
+  "version": "1.0.0",
+  "description": "BRO Nexus is the official home of BRO PC Toolkit and NEXUS Engineering Suite: a cross-platform collection of local-first PC utilities and engineering tools for Windows, macOS and the web.",
+  "website": "https://zaboylah-cell.github.io/Nexus-Engineering-Suite/",
+  "releaseUrl": "https://github.com/zaboylah-cell/Nexus-Engineering-Suite/releases",
+  "downloads": [
+    {
+      "name": "Windows Installer",
+      "platform": "Windows 10/11 x64",
+      "format": "NSIS .exe installer"
+    },
+    {
+      "name": "Windows Portable",
+      "platform": "Windows 10/11 x64",
+      "format": "Portable .exe"
+    },
+    {
+      "name": "macOS Installer",
+      "platform": "macOS",
+      "format": "DMG disk image"
+    },
+    {
+      "name": "macOS Portable",
+      "platform": "macOS",
+      "format": "ZIP app bundle"
+    }
+  ],
+  "features": [
+    "System overview",
+    "Read-only disk manager",
+    "File organizer preview",
+    "App launcher",
+    "Network diagnostics",
+    "Security center shortcuts",
+    "Web shortcuts",
+    "Engineering calculators",
+    "JSON formatter and validator",
+    "Base64 encoder and decoder",
+    "Regular-expression tester",
+    "Unit and number converters"
+  ]
+}
